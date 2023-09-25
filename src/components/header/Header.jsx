@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          Dodge
+          Dodge Asis
         </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
@@ -48,11 +48,8 @@ const Header = () => {
             onClick={() => showMenu(!Toggle)}
           ></i>
 
-          <div
-            className={`nav__toggle ${Toggle ? "show-menu" : ""}`}
-            onClick={() => showMenu(!Toggle)}
-          >
-            <i className="uil uil-apps"></i>
+          <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+            <i class="uil uil-apps"></i>
           </div>
         </div>
       </nav>
